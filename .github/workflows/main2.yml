@@ -55,7 +55,7 @@ jobs:
         with:
          args: >
           -Dsonar.organization=kchojnacka
-          -Dsonar.projectKey=ms-starwars
+          -Dsonar.projectKey=kchojnacka_ms-starwars
          projectBaseDir: ./
       
       - name: Set up QEMU
