@@ -70,3 +70,10 @@ jobs:
           registry: testowypjatk.jfrog.io
           username: ${{ secrets.JFROG_USERNAME }}
           password: ${{ secrets.JFROG_PASSWORD }}
+          
+      - name: Build and push
+        id: docker_build
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: testowypjatk.jfrog.io/default-docker-local/test:latest
